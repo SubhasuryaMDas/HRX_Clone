@@ -21,6 +21,48 @@ body {
   width: 100%;
   z-index: 100;
 }
+.header > svg{
+  width: 24px;
+  height: 24px;
+  fill: #e74747;
+  display: none;
+}
+
+@media only screen and (max-width: 800px){
+  body{
+    overflow-x: hidden;
+  }
+  .header > svg{
+  width: 24px;
+  height: 24px;
+  fill: #e74747;
+  display: flex;
+}
+.nav{
+  display: none;
+}
+.login-btn{
+  display: none;
+}
+.header{
+  width: 100%;
+}
+.footer-content{
+  flex-direction: column;
+height: fit-content;
+}
+.footer{
+  height: fit-content;
+}
+.footer-content > div{
+   flex-direction: column;
+   height: fit-content;
+}
+
+}
+
+
+
 nav {
   display: flex;
   gap: 40px;
